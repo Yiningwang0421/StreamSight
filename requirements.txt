@@ -1,0 +1,9 @@
+numpy>=1.24
+torch>=2.2
+pytest>=7.4
+matplotlib>=3.7
+
+# Optional, Linux + NVIDIA GPU only. Not imported on the CPU path.
+# The project does not vendor this repository and does not fall back to PyTorch
+# when backend "flash2" is requested.
+#   pip install flash-attn --no-build-isolation
