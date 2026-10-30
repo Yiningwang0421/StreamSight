@@ -1,0 +1,7 @@
+device,mode,batch,frames,median_total_ms,median_per_frame_ms,frames_per_sec,max_abs_err_vs_recompute,status,note
+NVIDIA GeForce RTX 2060,e2e_recompute_prefix,2,16,27.0587,1.5565,1182.62,0.000e+00,ok,random_init; includes repeated CNN and QKV
+NVIDIA GeForce RTX 2060,e2e_torch_kv_cache,2,16,29.9754,1.6454,1067.54,1.788e-07,ok,"random_init; new frame only, PyTorch attention"
+NVIDIA GeForce RTX 2060,e2e_cuda_kv_decode,2,16,28.3948,1.5503,1126.97,1.192e-07,ok,random_init; custom decode kernel
+NVIDIA GeForce RTX 2060,attention_only_recompute_explicit,2,16,4.5801,0.2508,6986.80,,ok,projections already done; explicit 1xT scores are materialized
+NVIDIA GeForce RTX 2060,attention_only_torch_kv_cache,2,16,5.9560,0.1884,5372.72,,ok,projections already done; PyTorch SDPA on the cached prefix
+NVIDIA GeForce RTX 2060,attention_only_cuda_kv_decode,2,16,5.3351,0.1374,5997.99,,ok,projections already done; custom kernel does not write scores

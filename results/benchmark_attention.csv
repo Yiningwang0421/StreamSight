@@ -1,0 +1,91 @@
+status,median_ms,mean_ms,extra_alloc_mb,max_abs_err,note,backend,device,precision,workload,batch,heads,seq_q,seq_kv,head_dim,theoretical_score_mb
+ok,0.3567,0.3700,8.75,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,128,128,32,0.1250
+ok,0.1028,0.1310,0.0322265625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,128,128,32,0.1250
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,128,128,32,0.1250
+ok,0.2580,0.3335,8.12939453125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,128,32,0.0020
+ok,0.1148,0.1170,0.00146484375,2.384e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,128,32,0.0020
+ok,0.0784,0.1571,0.00048828125,1.490e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,128,32,0.0020
+ok,0.3700,0.3616,10.375,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,256,256,32,0.5000
+ok,0.0983,0.1009,0.0634765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,256,256,32,0.5000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,256,256,32,0.5000
+ok,0.2499,0.2667,8.13330078125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,256,32,0.0039
+ok,0.1312,0.1360,0.00146484375,1.192e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,256,32,0.0039
+ok,0.1097,0.1136,0.00048828125,1.341e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,256,32,0.0039
+ok,0.3423,0.3659,16.625,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,512,512,32,2.0000
+ok,0.1272,0.1293,0.1259765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,512,512,32,2.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,512,512,32,2.0000
+ok,0.2568,0.3224,8.14111328125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,512,32,0.0078
+ok,0.1934,0.1990,0.00146484375,2.086e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,512,32,0.0078
+ok,0.1865,0.1883,0.00048828125,2.384e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,512,32,0.0078
+ok,0.9687,1.1330,41.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,1024,1024,32,8.0000
+ok,0.2745,0.2873,0.2509765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,1024,1024,32,8.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,1024,1024,32,8.0000
+ok,0.3179,0.4282,8.15673828125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,1024,32,0.0156
+ok,0.3070,0.3250,0.00146484375,1.192e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,1024,32,0.0156
+ok,0.3255,0.3279,0.00048828125,1.416e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,1024,32,0.0156
+ok,2.3247,2.6593,138.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,2048,2048,32,32.0000
+ok,0.4211,0.4274,0.5009765625,1.221e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,2048,2048,32,32.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,1,4,2048,2048,32,32.0000
+ok,0.2684,0.3330,8.18798828125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,2048,32,0.0312
+ok,0.3715,0.3697,0.00146484375,9.686e-08,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,2048,32,0.0312
+ok,0.4206,0.4302,0.00048828125,1.118e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,1,4,1,2048,32,0.0312
+ok,0.3666,0.3823,10.625,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,128,128,32,0.5000
+ok,0.1122,0.1825,0.1259765625,4.883e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,128,128,32,0.5000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,128,128,32,0.5000
+ok,0.2700,0.2725,8.142578125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,128,32,0.0078
+ok,0.1249,0.1915,0.0029296875,2.384e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,128,32,0.0078
+ok,0.0720,0.0711,0.001953125,1.788e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,128,32,0.0078
+ok,0.3536,0.4297,17.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,256,256,32,2.0000
+ok,0.1065,0.1151,0.2509765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,256,256,32,2.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,256,256,32,2.0000
+ok,0.2592,0.2747,8.158203125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,256,32,0.0156
+ok,0.1312,0.2045,0.0029296875,2.086e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,256,32,0.0156
+ok,0.0891,0.0905,0.001953125,2.086e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,256,32,0.0156
+ok,0.6823,0.7091,42.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,512,512,32,8.0000
+ok,0.1440,0.1468,0.5009765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,512,512,32,8.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,512,512,32,8.0000
+ok,0.2638,0.3263,8.189453125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,512,32,0.0312
+ok,0.1480,0.1499,0.0029296875,1.565e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,512,32,0.0312
+ok,0.1167,0.1155,0.001953125,2.384e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,512,32,0.0312
+ok,2.2554,2.4268,140.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,1024,1024,32,32.0000
+ok,0.3368,0.3319,1.0009765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,1024,1024,32,32.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,1024,1024,32,32.0000
+ok,0.2639,0.2737,8.251953125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,1024,32,0.0625
+ok,0.2223,0.2308,0.0029296875,2.421e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,1024,32,0.0625
+ok,0.2678,0.2662,0.001953125,2.068e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,1024,32,0.0625
+ok,9.2527,8.9824,528.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,2048,2048,32,128.0000
+ok,0.9656,1.0549,2.0009765625,1.221e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,2048,2048,32,128.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,4,4,2048,2048,32,128.0000
+ok,0.2387,0.2619,8.376953125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,2048,32,0.1250
+ok,0.3579,0.3512,0.0029296875,1.490e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,2048,32,0.1250
+ok,0.4942,0.5818,0.001953125,1.788e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,4,4,1,2048,32,0.1250
+ok,0.3291,0.3422,18.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,128,128,32,2.0000
+ok,0.1006,0.1087,0.5009765625,4.883e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,128,128,32,2.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,128,128,32,2.0000
+ok,0.3724,0.3680,8.1953125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,128,32,0.0312
+ok,0.1848,0.1884,0.0087890625,2.682e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,128,32,0.0312
+ok,0.0693,0.0704,0.0078125,2.980e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,128,32,0.0312
+ok,0.7207,0.7749,44.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,256,256,32,8.0000
+ok,0.1295,0.1379,1.0009765625,4.883e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,256,256,32,8.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,256,256,32,8.0000
+ok,0.2478,0.3139,8.2578125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,256,32,0.0625
+ok,0.1835,0.1859,0.0087890625,3.725e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,256,32,0.0625
+ok,0.1018,0.1011,0.0078125,3.874e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,256,32,0.0625
+ok,2.1696,2.3534,144.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,512,512,32,32.0000
+ok,0.3108,0.3119,2.0009765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,512,512,32,32.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,512,512,32,32.0000
+ok,0.2493,0.3213,8.3828125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,512,32,0.1250
+ok,0.3271,0.3122,0.0087890625,1.937e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,512,32,0.1250
+ok,0.1843,0.1818,0.0078125,2.310e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,512,32,0.1250
+ok,9.2446,9.2292,536.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,1024,1024,32,128.0000
+ok,0.9837,1.1532,4.0009765625,4.883e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,1024,1024,32,128.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,1024,1024,32,128.0000
+ok,0.2256,0.2292,8.6328125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,1024,32,0.2500
+ok,0.4589,0.4579,0.0087890625,2.384e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,1024,32,0.2500
+ok,0.2724,0.2690,0.0078125,2.384e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,1024,32,0.2500
+ok,34.6961,34.8401,2088.125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,2048,2048,32,512.0000
+ok,3.7128,4.1265,8.0009765625,2.441e-04,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,2048,2048,32,512.0000
+unavailable,,,,,"flash_attn is not installed. Official FlashAttention-2 was not executed. On a supported NVIDIA GPU, install Dao-AILab flash-attention. This project does not vendor that source and does not replace it with PyTorch.",flashattention2,NVIDIA GeForce RTX 2060,float16,full_sequence,16,4,2048,2048,32,512.0000
+ok,0.2744,0.2839,9.1328125,0.000e+00,,explicit_qk_softmax_v,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,2048,32,0.5000
+ok,0.8131,0.9244,0.0087890625,2.235e-07,,pytorch_sdpa,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,2048,32,0.5000
+ok,0.5228,0.5193,0.0078125,2.906e-07,,cuda_decode,NVIDIA GeForce RTX 2060,float32,one_query,16,4,1,2048,32,0.5000
